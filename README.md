@@ -1,69 +1,57 @@
-# TravElle - A Travel App for Women
+# 🌍 TravElle – Women-Centric Travel Platform
 
-## Overview
-TravElle is a travel application designed specifically for women, providing a safe and supportive platform for sharing travel experiences, finding verified accommodations, and accessing safety insights.
+TravElle is a modern travel web application designed specifically for women, focusing on **safety, community, and personalized travel experiences**.  
+It provides a platform to explore verified stays, share travel stories, and access essential safety insights.
 
-## Features
-- **Landing Page**: A welcoming entry point with a hero section and a SignUp button.
-- **User Authentication**: Signup and login forms for user accounts.
-- **Dashboard**: A personalized interface for users after logging in.
-- **Safety Insights**: Emergency contact information and safety tips for travelers.
-- **Travel Stories**: A feature allowing users to upload images or paste links related to their travel experiences.
-- **Verified Stays**: A card layout displaying verified accommodations.
-- **Settings Page**: A section for users to modify their account settings and preferences.
+---
 
-## Technologies Used
-- React
-- TypeScript
-- Tailwind CSS
-- React Router
+## ✨ Key Features
 
-## Getting Started
+- 🔐 **Authentication System**
+  - Signup & Login functionality
+  - Client-side session handling
+  - Protected routes for secure access
 
-### Prerequisites
-- Node.js and npm installed on your machine.
+- 📊 **Personalized Dashboard**
+  - Track trips and travel activity
+  - View recent and upcoming journeys
 
-### Installation
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd TravElle
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+- 🛡️ **Safety Insights**
+  - Travel safety tips
+  - Emergency guidance for women travelers
 
-### Running the Application
-To start the development server, run:
-```
-npm start
-```
-The application will be available at `http://localhost:3000`.
+- 📖 **Travel Stories**
+  - Share experiences with text and images
+  - Upload or paste image links
 
-## Folder Structure
-```
-TravElle
-├── src
-│   ├── components          # Reusable components
-│   ├── pages               # Application pages
-│   ├── App.tsx             # Main application component
-│   ├── main.tsx            # Entry point of the application
-│   ├── routes.tsx          # Route definitions
-│   └── types               # TypeScript types and interfaces
-├── public
-│   └── index.html          # Main HTML template
-├── package.json            # npm configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── README.md               # Project documentation
-```
+- 🏨 **Verified Stays**
+  - Curated accommodations with safety verification
+  - Clean card-based UI for browsing
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+- ⚙️ **User Settings**
+  - Manage account preferences
 
-## License
-This project is licensed under the MIT License.
+---
+
+## 🧠 Tech Stack
+
+- **Frontend:** React, TypeScript  
+- **Styling:** Tailwind CSS  
+- **Routing:** React Router  
+- **State Management:** React Hooks  
+- **Authentication:** LocalStorage-based (client-side)
+
+---
+
+## 🔐 Authentication Flow
+
+- User signs up → stored in localStorage  
+- User logs in → credentials validated  
+- Session stored using `isAuthenticated`  
+- Protected routes restrict unauthorized access  
+
+> ⚠️ Note: This is a frontend-based authentication system. Backend integration is planned.
+
+---
+
+## 📁 Project Structure
